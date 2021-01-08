@@ -46,6 +46,24 @@ const quotes = [
     citation:`Going Postal`,
     year:`2004`,
     id: 8},
+  
+   {verbage:`Blood is one thing, but that’s not all that goes into family. The family you choose is the family that really matters. They’re the ones who’ll keep you standing.`,
+    source:`Seanan McGuire`,
+    citation:`Midnight Blue-Light Special`,
+    year:`2013`,
+    id: 9},
+
+   {verbage:`I’m suggesting that if you’re going to bring hell down upon someone’s head, you should dress for the occasion.`,
+    source:`T Kingfisher`,
+    citation:`The Seventh Bride`,
+    year:`2014`,
+    id: 10},
+
+   {verbage:`Rules only matter if everyone understands them, agrees to them, and can be trusted not to break them. Bearing these irrefutable facts in mind, rules never matter at all.`,
+    source:`Seanan McGuire`,
+    citation:`Half-Off Ragnarok`,
+    year:`2014`,
+    id: 11},
 
 
 ];
