@@ -58,16 +58,33 @@ function printQuote() {
 
   usedQuotes.push(quotePick.id);
   
-  let quoteWords = quotePick.verbage;
+  let quoteWords = quotePick.quote;
   let quoteAuth = quotePick.source;
   let quoteBook = quotePick.citation;
   let quoteYear = quotePick.year;
   let quoteHTML = `
-  <p class="quote">${quoteWords}</p>
-  <p class="source">${quoteAuth}<span class="citation">${quoteBook}</span><span class="year">${quoteYear}</span></p>`;
+    <p class="quote">${quoteWords}</p>
+    <p class="source">${quoteAuth}
+    </p>`;
+
+  //This if statement tests to see what information is available for each quotation, and modifies the HTML to fit
+  
+  if (typeof quoteBook === 'string' && typeof quoteYear === 'string') {
+    quoteHTML = `
+    <p class="quote">${quoteWords}</p>
+    <p class="source">${quoteAuth}<span class="citation">${quoteBook}</span><span class="year">${quoteYear}</span></p>`;
+  } else if (typeof quoteBook === 'undefined' && typeof quoteYear === 'string') {
+    quoteHTML = `
+    <p class="quote">${quoteWords}</p>
+    <p class="source">${quoteAuth}<span class="year">${quoteYear}</span></p>`;
+  } else if (typeof quoteBook === 'string' && typeof quoteYear === 'undefined') {
+    quoteHTML = `
+    <p class="quote">${quoteWords}</p>
+    <p class="source">${quoteAuth}<span class="citation">${quoteBook}</span></p>`;
+  };
+ 
   document.querySelector('#quote-box').innerHTML = quoteHTML;
   document.body.style.background = getColor();
-  
   if (usedQuotes.length === quotes.length){
     usedQuotes = [];
   };
