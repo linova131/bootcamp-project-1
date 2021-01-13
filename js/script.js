@@ -3,21 +3,6 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
-
-/*** 
- * `quotes` array 
-***/
-
-/***
- * `getRandomQuote` function
-***/
-
-/***
- * `printQuote` function
-***/
 
 //bgcolors is an array of colors that should be harmonious and also allow the white text to show clearly
 const bgcolors = ['#5F0F40', '#9A031E','#FB8B24','#E36414','#0F4C5C','#000000','#02111B','#606C38','#283618','#87E8B','#9BC53D'];
